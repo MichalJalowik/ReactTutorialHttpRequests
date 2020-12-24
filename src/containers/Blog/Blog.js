@@ -9,7 +9,7 @@ import NewPost from './NewPost/NewPost'
 
 class Blog extends Component {
     state = {
-        auth: false
+        auth: true
     }
 
 
