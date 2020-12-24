@@ -5,7 +5,7 @@ import Posts from './Posts/Posts'
 import './Blog.css';
 //import axios from 'axios';
 import NewPost from './NewPost/NewPost'
-import FullPost from '../../containers/Blog/FullPost/FullPost'
+
 
 class Blog extends Component {
     render() {
@@ -15,7 +15,7 @@ class Blog extends Component {
                     <nav>
                         <ul>
                             <li><NavLink
-                                to="/"
+                                to="/posts/"
                                 exact
                                 activeClassName="my-active"
                                 activeStyle={{
@@ -34,10 +34,10 @@ class Blog extends Component {
                 { /*<Route path="/" exact render={() => <h1>Home</h1>}></Route>
                 <Route path="/" render={() => <h1>Home 2</h1>}></Route>*/}
 
-                <Route path="/" exact component={Posts}></Route>
+
                 <Switch>
                     <Route path="/new-post" component={NewPost}></Route>
-                    <Route path="/:id" exact component={FullPost}></Route>
+                    <Route path="/posts" component={Posts}></Route>
 
                 </Switch>
 
